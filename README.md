@@ -45,7 +45,35 @@ activities like sitting,standing,laying known as static activities and walking,w
    <ul>
     <li>The idea for this Divide and Conquer 1D CNN taken from this paper,<a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5949027/">Divide and Conquer-Based 1D CNN Human Activity Recognition Using Test Data Sharpening</a>
      <li>according to this approach there are two levels ,first level the classifier is like a binary classifier trained to predict wether it is static event or dynamic event we can eaisly predict this beacuse we can see this from above insights from data.once a data point is determined either a static or dynamic then this data point given to coresseponding second level classifier to detect the original activity.this flow depicted in the following diagram</li>
-    <
+    <img src="1dcnn.png">
+    </li>
+   <p>i just tried randomly substituting parameters for lstm models,architecture of these models got from following site,<a href="https://machinelearningmastery.com/cnn-models-for-human-activity-recognition-time-series-classification/">Machine Learning Mastery</a> and got test accuracy around 96%,Below is its normalized confusion matrix</p>
+   <img src="img8.png">
+   <h4>Conclusion</h4>
+   <table style="width:100%">
+    <tr>
+     <th>Algorithm</th>
+     <th>Test Accuracy in percentage</th>
+    </tr>
+    <tr>
+     <td>Single Layer Lstm</td>
+     <td>90%</td>
+    </tr>
+    <tr>
+     <td>Multi Layer Lstm(4 layers)</td>
+     <td>89%</td>
+    </tr>
+    <tr>
+     <td>Divide And Conquer 1D-CNN</td>
+     <td>96%</td>
+    </tr>
+   </table>
+   <h4>End Credits and References</h4>
+   <ol>
+    <li>Applied Ai Course</li>
+    <li>Machine Learning Mastery</li>
+   
+    
    
    
    
