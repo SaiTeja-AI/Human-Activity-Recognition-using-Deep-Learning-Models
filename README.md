@@ -25,6 +25,7 @@ activities like sitting,standing,laying known as static activities and walking,w
   <p>
   <ul>
     <li> Number of data points per Activity.</li>
+    <img src="img1.png" alt="Number of DataPoints per activity">
     
     
   
