@@ -26,8 +26,14 @@ activities like sitting,standing,laying known as static activities and walking,w
   <ul>
     <li> Number of data points per Activity.</li>
     <img src="img1.png" alt="Number of DataPoints per activity">
-    <li>Plotted tBodyAccMag_mean feature find some interesting plot that we can devide activities into stationary and Moving(Dynamic) see below plot</li>
+    <li>Plotted tBodyAccMag_mean feature find some interesting plot that we can divide activities into stationary and Moving(Dynamic) see below plot</li>
    <img src="img2.png">
+   <li>Magnitude of an acceleration can saperate it well - See below plot</li>
+   <img src="img3.png">
+   <li>tried t-sne visualization with perplexity 50 and max-iter 2000 we acn see that difficult to classify the activities sitting and standing</li>
+   <img src="img5.jpg">
+   <h4>Deep Learning Models</h4>
+   
     
     
   
