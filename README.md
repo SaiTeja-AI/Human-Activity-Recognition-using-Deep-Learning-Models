@@ -31,8 +31,25 @@ activities like sitting,standing,laying known as static activities and walking,w
    <li>Magnitude of an acceleration can saperate it well - See below plot</li>
    <img src="img3.png">
    <li>tried t-sne visualization with perplexity 50 and max-iter 2000 we acn see that difficult to classify the activities sitting and standing</li>
-   <img src="img5.jpg">
-   <h4>Deep Learning Models</h4>
+   <img src="img5.png">
+   <h3>Deep Learning Model</h3>
+   <h4>Single Lstm layer model with Drop out</h4>
+   <p>There are three main signal types in the raw data: total acceleration, body acceleration, and body gyroscope. Each has three axes of data. This means that there are a total of nine variables for each time step,Further, each series of data has been partitioned into overlapping windows of 2.65 seconds of data, or 128 time steps,This means that one row of data has (128 * 9), or 1,152, elements
+   <p>Data heretried grid search and found best model with 'batch_size': 8, 'dropout_rate': 0.5, 'hidden_units': 64, 'init_mode': 'glorot_uniform' parameters and trained the model finally got accuracy of 90%,below is test data confusion matrix.</p>
+   <img src="img6.png">
+   <h4>Multi layered Lstm Model (upto 4 Layers)</h4>
+   <p>tried 4 layerd lstm model with and 2 fully connected layers with dropout 0.5 ang number of units all are 32,this model attains 89%
+    accuracy on test data</p>
+   <img src="img7.png">
+   <h4>Divide and Conquer-Based with 1D CNN </h4>
+   <ul>
+    <li>The idea for this Divide and Conquer 1D CNN taken from this paper,<a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5949027/">Divide and Conquer-Based 1D CNN Human Activity Recognition Using Test Data Sharpening</a>
+     <li>according to this approach there are two levels ,first level the classifier is like a binary classifier trained to predict wether it is static event or dynamic event we can eaisly predict this beacuse we can see this from above insights from data.once a data point is determined either a static or dynamic then this data point given to coresseponding second level classifier to detect the original activity.this flow depicted in the following diagram</li>
+    <
+   
+   
+   
+   
    
     
     
