@@ -26,6 +26,8 @@ activities like sitting,standing,laying known as static activities and walking,w
   <ul>
     <li> Number of data points per Activity.</li>
     <img src="img1.png" alt="Number of DataPoints per activity">
+    <li>Plotted tBodyAccMag_mean feature find some interesting plot that we can devide activities into stationary and Moving(Dynamic) see below plot</li>
+   <img src="img2.png">
     
     
   
